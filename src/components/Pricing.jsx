@@ -1,5 +1,8 @@
 import React from 'react'
 import { motion } from 'framer-motion';
+import TratoImage from "../assets/trato.jpg";
+import { Link } from 'react-router-dom';
+
 const Pricing = () => {
   const textVariant = {
     hidden:{ opacity: 0, x: -100},
@@ -54,15 +57,16 @@ const Pricing = () => {
         </div>
         
         <div className='flex justify-center px-10'>
-          
-          <motion.button initial="hidden" whileInView="visible" viewport={{amount:0.5}} variants={buttonVariant} whileHover={{scale:1.1}} whileTap={{scale:0.9}}
-            className="space-x-10 px-5 py-2 border border-black bg-yellow-400 hover:text-white font-semibold rounded-full ">
-            Registrate ahora </motion.button>
+          <Link to="/register">
+            <motion.button initial="hidden" whileInView="visible" viewport={{amount:0.5}} variants={buttonVariant} whileHover={{scale:1.1}} whileTap={{scale:0.9}}
+              className="space-x-10 px-5 py-2 border border-black bg-yellow-400 hover:text-white font-semibold rounded-full ">
+              Registrate ahora </motion.button>
+          </Link>
         </div>
         
       </div>
       <div className='px-10'>
-        <motion.img src="src\assets\trato.jpg" alt="" className='rounded-lg w-auto h-auto'
+        <motion.img src={TratoImage} alt="" className='rounded-lg w-auto h-auto'
         initial="hidden" whileInView="visible" viewport={{amount:0.5}} variants={imageVariant} whileHover={{ scale: 1.1 }}/>
       </div>
       

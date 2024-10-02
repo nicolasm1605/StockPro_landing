@@ -1,6 +1,6 @@
 import React from 'react'
 import { motion } from 'framer-motion';
-
+import BeneficiosImage from '../assets/beneficios.jpg';
 const Stats = () => {
   const textVariant = {
     hidden:{ opacity: 0, x: -100},
@@ -41,7 +41,7 @@ const Stats = () => {
       <div className='w-4/5 space-y-5 m-auto flex flex-col md:flex-row items-center justify-between md:space-y-0'>
         <div className='w-full md:w-1/3'> 
           <motion.img 
-            src="src\assets\beneficios.jpg" alt="" className="w-full rounded-lg h-auto" 
+            src={BeneficiosImage} alt="" className="w-full rounded-lg h-auto" 
             initial="hidden" whileInView="visible" viewport={{amount:0.5}} variants={imageVariant} whileHover={{ scale: 1.1 }} 
           />
         </div>

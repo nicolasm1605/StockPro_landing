@@ -1,5 +1,7 @@
 import React from "react";
 import { motion } from "framer-motion";
+import { Link } from 'react-router-dom';
+import StockImage from '../assets/stock.jpg';
 
 const Hero = () => {
     const textVariant = {
@@ -70,23 +72,25 @@ const Hero = () => {
                     inventario y gestión de proveedores.
                 </motion.p>
                 <div className="flex justify-center">
-                    <motion.a
-                        initial="hidden"
-                        whileInView="visible"
-                        viewport={{ amount: 0.5 }}
-                        variants={buttonVariant}
-                        whileHover={{ scale: 1.1 }}
-                        whileTap={{ scale: 0.9 }}
-                        className="px-5 py-2 border border-black hover:bg-yellow-400 hover:text-white font-semibold rounded-full"
+                <   Link to="/register">
+                    <motion.button
+                    initial="hidden"
+                    whileInView="visible"
+                    viewport={{ amount: 0.5 }}
+                    variants={buttonVariant}
+                    whileHover={{ scale: 1.1 }}
+                    whileTap={{ scale: 0.9 }}
+                    className="px-5 py-2 border border-black hover:bg-yellow-400 hover:text-white font-semibold rounded-full"
                     >
-                        Registrarse
-                    </motion.a>
+                    Registrarse
+                    </motion.button>
+                    </Link>
                 </div>
             </div>
             <div className="w-full md:w-1/2">
                 <motion.img
-                    src="src/assets/stock.jpg"
-                    alt=""
+                    src={StockImage}
+                    alt="imagen de stockPro"
                     className="rounded-lg h-auto"
                     initial="hidden"
                     whileInView="visible"

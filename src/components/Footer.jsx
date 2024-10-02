@@ -1,5 +1,6 @@
 import React from 'react';
 import { motion } from 'framer-motion';
+import { Link } from 'react-router-dom';
 const Footer = () => {
   return (
     <footer className="bg-gray-800 text-white py-5">
@@ -12,10 +13,13 @@ const Footer = () => {
         </div>
 
         <div className="flex justify-center space-x-6">
-          <a href="#" className="hover:text-gray-400">Inicio</a>
+          <Link to="/">
+            <a href="#" className="hover:text-gray-400">Inicio</a>
+          </Link>
+          
           <a href="#" className="hover:text-gray-400">Servicios</a>
           <a href="#" className="hover:text-gray-400">Contacto</a>
-          <a href="#" className="hover:text-gray-400">Política de privacidad</a>
+          
         </div>
 
         <div className="flex justify-center space-x-6">
