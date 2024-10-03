@@ -19,7 +19,7 @@ const Footer = () => {
           
           <a href="#" className="hover:text-gray-400">Servicios</a>
           <a href="#" className="hover:text-gray-400">Contacto</a>
-          console.log("hola mundo");
+          
         </div>
 
         <div className="flex justify-center space-x-6">
