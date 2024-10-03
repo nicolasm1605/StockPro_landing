@@ -35,6 +35,7 @@ const Footer = () => {
           <a href="#" className="hover:text-gray-400">
             <i className="fab fa-linkedin"></i>
           </a>
+          <p></p>
         </div>
       </div>
     </footer>
