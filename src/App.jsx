@@ -25,6 +25,7 @@ function App() {
           path="/"
           element={
             <>
+              <Hero />
               <section id="insights">
                 <Insights />
               </section>
