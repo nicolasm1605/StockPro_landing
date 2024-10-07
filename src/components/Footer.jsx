@@ -27,13 +27,7 @@ const Footer = () => {
             <i className="fab fa-facebook"></i>
           </a>
           <a href="#" className="hover:text-gray-400">
-            <i className="fab fa-twitter"></i>
-          </a>
-          <a href="#" className="hover:text-gray-400">
             <i className="fab fa-instagram"></i>
-          </a>
-          <a href="#" className="hover:text-gray-400">
-            <i className="fab fa-linkedin"></i>
           </a>
           <p></p>
         </div>

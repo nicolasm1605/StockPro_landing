@@ -44,12 +44,12 @@ const Pricing = () => {
         <motion.h1 initial="hidden" whileInView="visible"viewport={{amount:0.5}} variants={textVariant}
         className='text-4xl md:text-4xl font-bold'>Aumenta la eficiencia de tu negocio con StockPro</motion.h1>
         <motion.p initial="hidden" whileInView="visible"viewport={{amount:0.5}} variants={textVariant}
-        className='text-xl text-gray-600 text-justify'>StockPro ofrece una solución integral que no solo gestiona inventarios
+        className='text-xl text-gray-600 text-justify'>StockPro ofrece una solución integral que gestiona inventarios
           en tiempo real desde múltiples dispositivos móviles, 
-          sino que también optimiza la relación con los proveedores.
+          y también optimiza la relación con los proveedores.
           Los meseros pueden hacer pedidos directamente desde la app, 
-          actualizando el stock automáticamente, lo que elimina el error 
-          humano y reduce tiempos de espera. Además, los administradores 
+          actualizando el stock automáticamente, lo que reduce el error 
+          humano y tiempos de espera. Además, los administradores 
           tienen acceso a un historial detallado de proveedores, permitiéndoles
            tomar decisiones informadas basadas en datos.</motion.p>
         <div className='  '>
@@ -60,7 +60,7 @@ const Pricing = () => {
           <Link to="/register">
             <motion.button initial="hidden" whileInView="visible" viewport={{amount:0.5}} variants={buttonVariant} whileHover={{scale:1.1}} whileTap={{scale:0.9}}
               className="space-x-10 px-5 py-2 border border-black bg-yellow-400 hover:text-white font-semibold rounded-full ">
-              Registrate ahora </motion.button>
+              Obten mas informacion </motion.button>
           </Link>
         </div>
         

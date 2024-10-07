@@ -54,7 +54,9 @@ const Stats = () => {
           </motion.p>
           <motion.p initial="hidden" whileInView="visible"viewport={{amount:0.5}} variants={textVariant}
           className="md:text-2xl ">
-            Los restaurantes que no usan sistemas automatizados para gestionar inventarios pierden capital en costos operativos debido a errores humanos y mala gestión. Esto impacta directamente en la rentabilidad del negocio
+            Los negocios que usan sistemas automatizados para gestionar inventarios disminuyen la perdida de capital 
+            en costos operativos debido a errores humanos y mala gestión.    
+            Esto impacta directamente en la rentabilidad del negocio
           </motion.p>
         </div>
       </div>
